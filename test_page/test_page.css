@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.header {
+    padding: 25px;
+    padding-left: 50px;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+}
+
+
+
+.question {
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+    font-size: x-large;
+}
+
+.answer {
+    padding: 20px;
+    padding-left: 50px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.pagination button.marked {
+    background-color: yellow;
+}
+
+.pagination button.correct {
+    background-color: green;
+}
+
+.finish {
+    padding: 60px;
+    border-top: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+}
+
+.btn-mf{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.btn-next{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.previous-and-next{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal button {
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+}
